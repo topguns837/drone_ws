@@ -1,0 +1,3 @@
+[submodule "src/mavlink_sitl_gazebo"]
+	path = src/mavlink_sitl_gazebo
+	url = git@github.com:PX4/PX4-SITL_gazebo-classic.git
