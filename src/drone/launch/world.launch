@@ -1,0 +1,26 @@
+<launch>
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(find drone)/worlds/dynamic_world.world"/> 
+		<arg name="paused" value="false"/>
+		<arg name="use_sim_time" value="true"/>
+		<arg name="gui" value="true"/>
+		<arg name="headless" value="false"/>
+		<arg name="debug" value="false"/>
+
+
+		 <!-- send table urdf to param server -->
+      	<param name="drone_description" command = "$(find drone)/urdf/drone.urdf" />
+   
+   		<!-- push table_description to factory and spawn robot in gazebo -->
+      	<node name="spawn_table" pkg="gazebo" type="spawn_model" args="-urdf -param drone_description -z 0.1 -model table_model" respawn="false" output="screen" />
+
+		
+
+	</include>
+
+	
+
+	
+
+</launch>
+
