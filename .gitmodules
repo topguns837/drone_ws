@@ -1,3 +1,6 @@
 [submodule "src/mavlink_sitl_gazebo"]
 	path = src/mavlink_sitl_gazebo
 	url = git@github.com:PX4/PX4-SITL_gazebo-classic.git
+[submodule "src/aws-robomaker-small-warehouse-world"]
+	path = src/aws-robomaker-small-warehouse-world
+	url = git@github.com:aws-robotics/aws-robomaker-small-warehouse-world.git

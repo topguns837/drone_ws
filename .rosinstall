@@ -1,0 +1,1 @@
+- git: {local-name: /home/mediapipe/Desktop/ros_workspaces/drone_ws/src/aws-robomaker-small-warehouse-world, uri: 'https://github.com/aws-robotics/aws-robomaker-small-warehouse-world.git', version: ros1}
