@@ -3,7 +3,7 @@
 <launch>
    
   <!-- Start Gazebo with wg world running in (max) realtime -->
-  <include file="$(find hector_gazebo_worlds)/launch/aws_robomaker_warehouse.launch"/>
+  <include file="$(find hector_gazebo_worlds)/launch/gazebo_warehouse.launch"/>
   <!--<include file="$(find aws_robomaker_small_warehouse_world)/launch/small_warehouse.launch"/>-->
    
   <!-- Spawn simulated quadrotor uav -->
